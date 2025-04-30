@@ -1,0 +1,14 @@
+name: simple-jun
+
+    services:
+      app:
+        image: 413131/simple-jun
+        build: ./app
+        ports:
+          - "3001:3000"
+        volumes:
+          - "vol-simple:/app/public/image"
+
+volumes:
+  vol-simple:
+
