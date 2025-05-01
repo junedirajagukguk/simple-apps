@@ -4,4 +4,4 @@ WORKDIR /app
 ADD . /app/
 RUN npm install
 #dockerrun
-CMD ["nmp","start "]
+CMD ["npm","start"]
