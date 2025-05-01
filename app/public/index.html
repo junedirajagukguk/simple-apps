@@ -1,107 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DevOps Ninja Dashboard</title>
+  <title>Dashboard DevOps - Junedi Rajagukguk</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
     body {
       margin: 0;
-      font-family: 'Press Start 2P', cursive;
-      background: linear-gradient(to bottom right, #fef5e7, #ffe6cc);
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #f3f2ef;
     }
-
     .header {
-      background-color: #ff9900;
+      background-color: #283e4a;
       padding: 20px;
-      text-align: center;
       color: white;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
     }
-
-    .header img {
-      height: 70px;
-      vertical-align: middle;
+    .profile {
+      background-color: white;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile img {
       border-radius: 50%;
-      margin-right: 15px;
+      width: 120px;
+      height: 120px;
     }
-
-    .header h1 {
-      display: inline-block;
-      font-size: 20px;
+    .profile h1 {
+      margin: 10px 0 5px 0;
     }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .profile p {
+      margin: 5px 0;
+      color: #666;
+    }
+    .dashboard {
+      max-width: 800px;
+      margin: 20px auto;
+      display: flex;
       gap: 20px;
-      padding: 40px;
     }
-
     .card {
       background-color: white;
-      border-radius: 12px;
+      flex: 1;
       padding: 20px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card h2 {
-      margin-bottom: 10px;
-      color: #e67e22;
-    }
-
-    .card p {
-      margin-bottom: 15px;
-      font-size: 12px;
-    }
-
-    .card button {
-      padding: 8px 16px;
-      background-color: #d35400;
-      border: none;
-      color: white;
       border-radius: 8px;
-      font-size: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .card button:hover {
-      background-color: #a04000;
+    .card h2 {
+      margin-top: 0;
+    }
+    .card p {
+      color: #333;
     }
   </style>
 </head>
 <body>
+
   <div class="header">
-    <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/01/custom-image-of-naruto-s-team-7-with-kakashi-with-the-naruto-logo-behind-them.png" alt="naruto"/>
-    <h1>DevOps Ninja Dashboard</h1>
+    <h1>Dashboard DevOps</h1>
   </div>
 
-  <div class="cards">
+  <div class="profile">
+    <img src="https://via.placeholder.com/120" alt="Foto Profil">
+    <h1>Junedi Rajagukguk</h1>
+    <p>DevOps Engineer | Cloud Enthusiast | Automation Expert</p>
+    <p>Jakarta, Indonesia</p>
+  </div>
+
+  <div class="dashboard">
     <div class="card">
-      <h2>Shadow CI/CD Jutsu</h2>
-      <p>Pipeline: Success 🎯</p>
-      <button>Deploy Dattebayo!</button>
+      <h2>Status Pipeline</h2>
+      <p>Semua pipeline berjalan lancar.</p>
     </div>
     <div class="card">
-      <h2>Rasengan Docker</h2>
-      <p>Containers: 4 Active ⚡</p>
-      <button>Spin Up!</button>
+      <h2>Monitoring</h2>
+      <p>Tidak ada alert dalam 24 jam terakhir.</p>
     </div>
     <div class="card">
-      <h2>Byakugan Monitoring</h2>
-      <p>Status: All Clear 👁️</p>
-      <button>Scan Again</button>
+      <h2>Deploy Terbaru</h2>
+      <p>Versi 2.3.1 telah berhasil dideploy ke produksi.</p>
     </div>
   </div>
+
 </body>
 </html>
