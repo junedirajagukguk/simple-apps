@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard DevOps - Junedi Rajagukguk</title>
+  <meta charset="UTF-8">
+  <title>Dashboard DevOps - Hinata Style</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f3f2ef;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f7f4fc, #e4e1f9);
+      overflow-x: hidden;
     }
+
     .header {
-      background-color: #283e4a;
+      background-color: #c8b6ff;
+      color: #2d006b;
       padding: 20px;
-      color: white;
       text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .profile {
-      background-color: white;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .hinata {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 180px;
+      animation: float 4s ease-in-out infinite;
     }
-    .profile img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
     }
-    .profile h1 {
-      margin: 10px 0 5px 0;
-    }
-    .profile p {
-      margin: 5px 0;
-      color: #666;
-    }
+
     .dashboard {
-      max-width: 800px;
-      margin: 20px auto;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px;
       gap: 20px;
     }
+
     .card {
-      background-color: white;
-      flex: 1;
+      background: #fff;
+      border-radius: 12px;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border: 2px solid #d8c2ff;
+      position: relative;
     }
-    .card h2 {
+
+    .card::before {
+      content: "✿";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      font-size: 24px;
+      color: #d8c2ff;
+    }
+
+    .card h3 {
       margin-top: 0;
+      color: #5d4b9c;
     }
-    .card p {
-      color: #333;
+
+    .petal {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background-image: url('https://i.ibb.co/SdFyFTG/petal.png'); /* petal fallback */
+      background-size: cover;
+      animation: fall 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>Dashboard DevOps</h1>
-  </div>
-
-  <div class="profile">
-    <img src="https://via.placeholder.com/120" alt="Foto Profil">
-    <h1>Junedi Rajagukguk</h1>
-    <p>DevOps Engineer | Cloud Enthusiast | Automation Expert</p>
-    <p>Jakarta, Indonesia</p>
-  </div>
+  <div class="header">🌸 DevOps Dashboard - Hinata Style 🌸</div>
 
   <div class="dashboard">
     <div class="card">
-      <h2>Status Pipeline</h2>
-      <p>Semua pipeline berjalan lancar.</p>
+      <h3>Pipeline Status</h3>
+      <p>Semua pipeline berhasil dijalankan 🎉</p>
     </div>
     <div class="card">
-      <h2>Monitoring</h2>
-      <p>Tidak ada alert dalam 24 jam terakhir.</p>
+      <h3>Monitoring</h3>
+      <p>Tidak ada alert selama 24 jam terakhir 💜</p>
     </div>
     <div class="card">
-      <h2>Deploy Terbaru</h2>
-      <p>Versi 2.3.1 telah berhasil dideploy ke produksi.</p>
+      <h3>Deployment Terakhir</h3>
+      <p>Versi 2.3.1 berhasil di-deploy ke production ✅</p>
     </div>
   </div>
 
-</body>
-</html>
+  <img src="https://i.ibb.co/VTg62cc/hinata.png" alt="Hinata Hyuga" class="hinata">
+
+  <!-- Cherry blossom animation -->
+  <div class="petal" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="petal" style="left: 30%; ani
