@@ -1,6 +1,6 @@
 name: simple-jun
 
-    services:
+services:
       app:
         image: 413131/simple-jun
         build: ./app
